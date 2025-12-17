@@ -14,12 +14,18 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        background-color: lightgrey;
       }
-      body {
+      #container {
         background-image: url("./img/streets.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        width: 1600px;
+        position: relative;
+        border: 5px solid;
+        height: 1200px;
+        margin: auto;
       }
       #img-up {
         position: absolute;
@@ -94,7 +100,7 @@
       }
     </style>
 
-    <div>
+    <div id="container">
       <img src="./img/arrow.png" alt="" id="img-up" />
       <a id="buttonup" href="bar.html"></a>
       <img src="./img/arrow.png" alt="" id="img-left" />
@@ -108,8 +114,9 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <p>
-          Mornin' parter! It's currently January 16, 1919. The 18th Amendment
-          was just ratified! It was proposed December 18, 1917!
+          Mornin' parter! It's currently December 18, 1917. The 18th Amendment
+          was just proposed! It states a ban on alchohol, the creation of it,
+          the distribution of it, you name it! It's gone!
         </p>
       </div>
     </div>

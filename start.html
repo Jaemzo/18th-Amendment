@@ -10,6 +10,9 @@
         color: black;
         font-size: 3em;
       }
+      p {
+        font-size: 2em;
+      }
       html,
       body {
         margin: 0;
@@ -64,6 +67,29 @@
         left: 37.55%;
         justify-content: center;
       }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        top: -12.5%;
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        height: 100%;
+      }
+      .intro {
+        top: 75%;
+      }
     </style>
   </head>
   <body>
@@ -71,8 +97,24 @@
       <h1>The 18th Amendment</h1>
     </div>
     <div>
-      <button href="streets.html" class="start">Press to Start</button>
-      <a class="hit-box button" href="streets.html"></a>
+      <button id="myBtn">Press to Begin!</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Introduction</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            perferendis dolor vel a. Iste quam nobis, ad illo fuga quos
+            doloremque, iure dolorem nisi quisquam nulla illum nostrum officiis
+            asperiores!
+          </p>
+          <div>
+            <button class="intro">Press to Start the Game</button>
+          </div>
+        </div>
+      </div>
+      <!-- <a class="hit-box button" href="streets.html"></a> -->
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
