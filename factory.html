@@ -15,11 +15,16 @@
         padding: 0;
         height: 100%;
       }
-      body {
+      #container {
         background-image: url("./img/factory.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        width: 1600px;
+        position: relative;
+        border: 5px solid;
+        height: 1200px;
+        margin: auto;
       }
       #img-right {
         position: absolute;
@@ -37,19 +42,56 @@
       #factoryHenry {
         position: absolute;
         left: 40%;
-        top: 75%;
+        top:70%;
         width: 150px;
         height: 275px;
       }
+      #myBtn {
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        width: 150px;
+        height: 275px;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        top: 10%;
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+      }
     </style>
 
-    <div>
+    <div id="container">
       <img src="./img/arrow.png" alt="" id="img-right" />
       <a id="buttonright" href="streets.html"></a>
     </div>
     <div id="img">
       <img id="factoryHenry" src="./img/Henry.png" alt="Henry" />
     </div>
+    <a id="myBtn" href=""></a>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>
+            Man, the oil, tobacco, and saloon industries need to be shut down because these companies 
+            formed trusts to dominate industries, control prices, and eliminate rivals, concentrating
+            wealth and power.
+          </h1>
+        </div>
+      </div>
     <script src="script.js"></script>
   </body>
 </html>

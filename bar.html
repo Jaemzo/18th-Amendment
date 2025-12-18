@@ -15,11 +15,16 @@
         padding: 0;
         height: 100%;
       }
-      body {
-        background-image: url("/img/outerBar.png");
+      #container {
+        background-image: url("./img/outerBar.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        width: 1600px;
+        position: relative;
+        border: 5px solid;
+        height: 1200px;
+        margin: auto;
       }
       #img-up {
         position: absolute;
@@ -46,13 +51,22 @@
         width: 226px;
         height: 124px;
       }
+      #outsideBarHenry {
+        position: absolute;
+        left: 60%;
+        top: 60%;
+        width: 7%;
+      }
     </style>
 
-    <div>
+    <div id="container">
       <img src="./img/arrow.png" alt="" id="img-up" />
       <a id="hit1" class="buttonup" href="inside_bar.html"></a>
       <img src="./img/arrow.png" alt="" id="img-left" />
       <a id="hit2" class="buttonleft" href="streets.html"></a>
+    </div>
+    <div id="img">
+      <img id="outsideBarHenry" src="./img/Henry.png" alt="Henry"/>
     </div>
     <script src="script.js"></script>
   </body>

@@ -15,11 +15,16 @@
         padding: 0;
         height: 100%;
       }
-      body {
+      #container {
         background-image: url("./img/capitol.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        width: 1600px;
+        position: relative;
+        border: 5px solid;
+        height: 1200px;
+        margin: auto;
       }
       #img-right {
         position: absolute;
@@ -36,12 +41,26 @@
       }
       #capitolHenry {
         position: absolute;
+        left: 60%;
+        top: 60%;
+        width: 150px;
+        height: 275px;
+      }
+      #capitolHenry2 {
+        position: absolute;
         left: 40%;
         top: 60%;
         width: 150px;
         height: 275px;
       }
       #myBtn {
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        width: 150px;
+        height: 275px;
+      }
+      #myBtn2 {
         position: absolute;
         top: 60%;
         left: 40%;
@@ -58,34 +77,51 @@
         width: 100%;
         height: 100%;
         overflow: auto;
-        top: 50%;
+        top: 10%;
       }
       .modal-content {
         background-color: #fefefe;
         margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 80%;
+        width: 50%;
       }
+      
     </style>
     </div>
-    <div>
+    <div id="container">
       <img src="./img/arrow.png" alt="" id="img-right" />
       <a id="buttonleft" href="streets.html"></a>
     </div>
     <div id="img">
       <img id="capitolHenry" src="./img/Henry.png" alt="Henry" />
     </div>
-    <a id="myBtn" href=""></a>
+    <div id="img">
+      <img id="capitolHenry2" src="./img/Henry.png" alt="Henry" />
+    </div>
+    
+    <a id="myBtn" href="#"></a>
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>
+        <h1>
           Why 
-        </p>
+        </h1>
       </div>
     </div>
-    
+
+    <a id="myBtn2" href="#"></a>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>
+          Why 
+        </h1>
+      </div>
+    </div>
+
+
+
     <script src="script.js"></script>
   </body>
 </html>
